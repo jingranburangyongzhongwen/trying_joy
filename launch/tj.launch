@@ -1,0 +1,11 @@
+<launch>
+ <node pkg="trying_joy" type="pub" name="publisher"/>
+
+ <!-- joy node -->
+  <node respawn="true" pkg="joy"
+        type="joy_node" name="my_joy" >
+    <param name="dev" type="string" value="/dev/input/js0" />
+    <param name="deadzone" value="0.12" />
+  </node>
+
+</launch>
