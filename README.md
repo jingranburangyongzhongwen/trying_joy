@@ -1,0 +1,2 @@
+# trying_joy
+通过ros获取Xbox one按键信息并显示，即publisher获取joy信息，将对应的按键信息发送出去，subscriber显示出来
