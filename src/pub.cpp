@@ -83,8 +83,9 @@ void Pub::joyCallback(const sensor_msgs::Joy::ConstPtr& joy)
   std::string s=msg.data.c_str();
   int len=s.length();
   for(int i=0;i<len;i++){
-      if(isalpha(s[i]))
+      if(isalpha(s[i])){
           my_pub.publish(msg);
+      }
   }
 
 }
